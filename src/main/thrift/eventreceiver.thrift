@@ -1,4 +1,4 @@
-namespace java com.chymeravr.thrift.eventreceiver
+namespace java com.chymeravr.schemas.eventreceiver
 
 enum ResponseCode {
     OK,
