@@ -23,6 +23,40 @@ struct Placement {
     2: required AdFormat adFormat;
 }
 
+struct Location {
+    1: required double lat;
+    2: required double lon;
+    3: required double accu;
+}
+
+struct Demographics {
+    1: required string dob;
+    2: required string gender;
+    3: required string email;
+}
+
+struct Device {
+    1: required string manufacturer;
+    2: required string model;
+    3: required string ram;
+}
+
+struct Request {
+    1: required i64 timestamp;
+    2: required i16 sdkVersion;
+    3: required string appId;
+    4: required list<Placement> placements;
+    5: required string osId;
+    6: required string osVersion;
+    7: required string userId;
+    8: required i32 hmdId;
+    9: required Location location;
+    10: required Demographics demographics;
+    11: required Device device;
+    12: required string connectivity;
+    13: required string wifiName;
+}
+
 struct RequestInfo {
     1: required string appId;
     2: required list<Placement> placementIds;
