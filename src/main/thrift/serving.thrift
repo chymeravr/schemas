@@ -41,7 +41,7 @@ struct Device {
     3: required string ram;
 }
 
-struct Request {
+struct ServingRequest {
     1: required i64 timestamp;
     2: required i16 sdkVersion;
     3: required string appId;
@@ -55,6 +55,17 @@ struct Request {
     11: required Device device;
     12: required string connectivity;
     13: required string wifiName;
+}
+
+struct AdMeta {
+    1: required string servingId;
+    2: required string mediaUrl;
+}
+
+struct ServingResponse {
+   1: required ResponseCode responseCode;
+   2: required map<string, AdMeta> ads;
+   3: optional ErrorCode errorCode;
 }
 
 struct RequestInfo {
