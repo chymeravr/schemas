@@ -18,6 +18,11 @@ enum AdFormat {
     VID_360
 }
 
+enum PricingModel {
+	CPC,
+	CPM
+}
+
 struct Placement {
     1: required string id;
     2: required AdFormat adFormat;
@@ -85,6 +90,7 @@ struct ImpressionInfo {
     5: required double costPrice;
     6: required double sellingPrice;
     7: required string creativeUrl;
+	8: required PricingModel pricingModel;
 }
 
 struct ServingLog {
