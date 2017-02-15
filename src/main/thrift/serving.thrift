@@ -94,7 +94,17 @@ struct ImpressionInfo {
 	8: required PricingModel pricingModel;
 }
 
-struct ServingLog {
+struct ResponseLog {
+	1: required i64 timestamp;
+	2: required string requestId;
+	3: required i32 sdkVersion;
+	4: required list<i32> experimentIds;
+	5: required RequestInfo requestInfo;
+	6: required ResponseCode responseCode;
+	7: required list<ImpressionInfo> impressionInfo;
+}
+
+struct ImpressionLog {
     1: required i64 timestamp;
     2: required string requestId;
     3: required i32 sdkVersion;
@@ -104,3 +114,4 @@ struct ServingLog {
     7: required string placementId;
     8: required ImpressionInfo impressionInfo;
 }
+
