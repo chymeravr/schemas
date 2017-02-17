@@ -7,6 +7,7 @@ enum ResponseCode {
 
 enum EventType {
     ERROR,
+    AD_LOAD,
     AD_SHOW,
     AD_CLOSE,
     AD_CLICK,

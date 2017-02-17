@@ -55,11 +55,11 @@ struct ServingRequest {
     6: required string osVersion;
     7: required string userId;
     8: required i32 hmdId;
-    9: required Location location;
-    10: required Demographics demographics;
-    11: required Device device;
-    12: required string connectivity;
-    13: required string wifiName;
+    9: optional Location location;
+    10: optional Demographics demographics;
+    11: optional Device device;
+    12: optional string connectivity;
+    13: optional string wifiName;
 }
 
 struct AdMeta {
