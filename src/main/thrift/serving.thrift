@@ -101,7 +101,7 @@ struct ResponseLog {
 	4: required list<i32> experimentIds;
 	5: required RequestInfo requestInfo;
 	6: required ResponseCode responseCode;
-	7: required list<ImpressionInfo> impressionInfo;
+	7: required map<string, ImpressionInfo> impressionInfoMap;
 }
 
 struct ImpressionLog {
