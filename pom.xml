@@ -7,6 +7,19 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>schemas</artifactId>
 
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Nexus Staging Repo</name>
+            <url>http://13.93.217.168:8081/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Nexus Staging Repo</name>
+            <url>http://13.93.217.168:8081/repository/maven-snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.thrift</groupId>
