@@ -93,6 +93,7 @@ struct ImpressionInfo {
     6: required double sellingPrice;
     7: required string creativeUrl;
 	8: required PricingModel pricingModel;
+    9: optional string clickUrl;
 }
 
 struct ResponseLog {
