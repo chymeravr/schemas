@@ -65,6 +65,7 @@ struct ServingRequest {
 struct AdMeta {
     1: required string servingId;
     2: required string mediaUrl;
+    3: optional string clickUrl;
 }
 
 struct ServingResponse {
