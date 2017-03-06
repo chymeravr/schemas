@@ -44,6 +44,7 @@ struct Device {
     1: required string manufacturer;
     2: required string model;
     3: required string ram;
+    4: required string deviceId;
 }
 
 struct ServingRequest {
