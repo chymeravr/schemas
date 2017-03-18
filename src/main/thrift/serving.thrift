@@ -71,10 +71,11 @@ struct AdMeta {
 }
 
 struct ServingResponse {
-   1: required ResponseCode responseCode;
-   2: required map<string, AdMeta> ads;
-   3: required string requestId;
-   4: optional ErrorCode errorCode;
+    1: required ResponseCode responseCode;
+    2: required map<string, AdMeta> ads;
+    3: required string requestId;
+    4: optional ErrorCode errorCode;
+    5: optional i32 adType;
 }
 
 struct RequestInfo {
